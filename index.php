@@ -14,6 +14,7 @@
 
         <h1 class="fw-bold">Data Siswa</h1>
         <a class="btn btn-primary" href="form-simpan.php">+ Tambah Data</a>
+        <a class="btn btn-secondary" href="proses-exportpdf.php">Ekspor ke PDF</a>
         <table class="table table-striped">
             <thead>
                 <tr>
