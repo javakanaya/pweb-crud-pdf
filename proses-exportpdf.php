@@ -61,7 +61,7 @@ while ($data = $sql->fetch()) {
         $pdf->SetXY($x + $maxWidth, $y);
     } else {
         // If the image file doesn't exist, display alternative text
-        $pdf->Cell(40, 50, 'Gambar Tidak Ditemukan', 1, 0, 'C');
+        $pdf->Cell(50, 50, 'Gambar Tidak Ditemukan', 1, 0, 'C');
     }
 
     $pdf->Cell(30, 50, $data['nis'], 1, 0, 'C');
