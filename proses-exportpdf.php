@@ -1,5 +1,5 @@
 <?php
-require('fpdf.php');
+require('fpdf/fpdf.php');
 
 // Create a new PDF instance with landscape orientation
 $pdf = new FPDF('L');
@@ -54,6 +54,7 @@ while ($data = $sql->fetch()) {
         $y = $pdf->GetY();
 
         // Add the image to the cell
+        $pdf->Cell(50, 50, '', 1, 0, 'C'); // Empty cell for foto
         $pdf->Image($imagePath, $x + 5, $y + 5, 40, 40); // Add the photo to the cell
 
         // Move the position to the right of the image
